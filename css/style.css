@@ -201,6 +201,10 @@ footer {
     .nav {
         justify-content: center;
     }
+    
+    .nav-list {
+        margin-right: 0px;
+    }
 
     .projects-grid {
         grid-template-columns: 95%;
