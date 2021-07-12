@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;  
+}
+
+a {
+    text-decoration: none;
+}
+
+/***** Desktop view *****/
+
+.nav {
+    background-color: #1a1a1d;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.nav-list > li {
+    padding: 1em;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    color: #d5ddef;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1d;
+    color: white;
+}
+
+.projects {
+    background: rgb(145,120,152);
+    background: linear-gradient(180deg, rgba(145,120,152,1) 10%, rgba(76,57,79,1) 96%);  
+    padding: 2.5em;
+    padding-top: 0;
+    color: white;
+}
+
+.project-section-title {
+    text-align: center;
+    font-size: 2vw;
+    margin: 1.5em;
+    margin-top: 0;
+    padding-top: 2em;
+    font-weight: 300;
+}
+
+.projects-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto auto;
+    column-gap: 5vw;
+    row-gap: 5vw;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1d;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.project-tile:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 5px #1a1a1d;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+}
+
+.project-img {
+    width: 100%;
+    height: 11rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-title {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0.5em;
+    font-family: 500;
+}
+
+.show-more-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+    background-color: #1a1a1d;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    box-shadow: 2px 2px 2px #1a1a1d;
+}
+
+.contact {
+    display: flex;
+    background-color: #4c394f;
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-subtitle {
+    font-size: 2em;
+    margin: 1.5em;
+    color: white;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-link {
+    margin: 1em;
+    font-size: 1.5em;
+    color: #d5ddef;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1d;
+    color: white;
+    height: 5vh;
+    text-align: center;
+}
+
+#copyright > a {
+    color: #d5ddef;
+}
+
+/***** Tablet view *****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .projects-grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .project-section-title {
+        font-size: 5vw;
+    }
+}
+
+/***** Mobile view *****/
+@media (max-width: 767px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 95%;
+        grid-template-rows: auto;
+    }
+
+    .project-section-title {
+        font-size: 8vw;
+    }
+
+    .project-title {
+        font-size: 5vw;
+    }
+    
+    .contact-subtitle {
+        font-size: 6vw;
+        text-align: center;
+        margin: 1.5em;
+        color: white;
+    }
+    
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-list > li {
+        margin: 0.5em;
+    }
+    
+    .contact-link {
+        font-size: 5vw;
+        color: #d5ddef;
+    }
+
+    #copyright {
+        font-size: 3vw;
+    }
+}
