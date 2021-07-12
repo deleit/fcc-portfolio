@@ -1,4 +1,4 @@
-# FCC: Techinical Documentation Page
+# Personal Portfolio Page
 
 CodePen available [here](https://codepen.io/deleit/full/bGWwKrv).
 
