@@ -94,17 +94,19 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #1a1a1d;
-    border-radius: 5px;
+    border-radius: 0;
     width: 100%;
     max-width: 320px;
     height: 100%;
     opacity: 0.8;
     justify-self: center;
+    border: 2px solid #1a1a1d;
 }
 
 .project-tile:hover {
     opacity: 1;
-    box-shadow: 5px 5px 5px #1a1a1d;
+    border: 2px solid #4c394f;
+    background-color: #4c394f;
 }
 
 .project-link {
@@ -115,7 +117,6 @@ a {
 .project-img {
     width: 100%;
     height: 11rem;
-    border-radius: 5px 5px 0 0;
 }
 
 .project-title {
